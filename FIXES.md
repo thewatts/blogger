@@ -17,3 +17,5 @@
 # "the answer is a technique called reflection" --> *reflection* => make it italicsjA
 #
 # "relative path verbs" http://www.coffeecup.com/help/articles/absolute-vs-relative-pathslinks/
+#
+# "root to: 'articles#index'" => root 'articles#index'
