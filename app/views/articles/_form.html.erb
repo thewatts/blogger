@@ -17,11 +17,11 @@
     <%= f.text_field :tag_list %>
   </p>
   <p>
-    <% if @article.image.exists? %>
-      <%= image_tag @article.image.url %>
-    <% end %>
-    <%= f.label :image, "Attach a New Image" %><br>
-    <%= f.file_field :image %>
+    <% @article.attachments.each do |attachment| %>
+      <%= image_tag attachment.image.url %>
+    <% end %><br>
+    <%= f.label :attachment, "Attach a New Image" %><br>
+    <%= f.file_field :attachment %>
   </p>
   <p>
     <%= f.submit %>
